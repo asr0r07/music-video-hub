@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block title %} MusicVideo Hub - Your Entertainment Portal {% endblock %}
+
+{% block content %}
+    <section class="hero">
+        <h1 class="animated-text">Welcome to MusicVideo<span>Hub</span></h1>
+        <p class="subtitle">Your ultimate destination for music and videos</p>
+    </section>
+
+    <section class="featured">
+           <div class="featured-item music-card">
+                <div class="card-content">
+                    <h2>Featured Music</h2>
+                    <img src="https://static.wikia.nocookie.net/phonk/images/9/9f/%D0%A4%D0%BE%D0%BD%D0%BA.jpg/revision/latest/scale-to-width-down/300?cb=20240322171315&path-prefix=ru" alt="Featured Music">
+                    <p>Discover our latest and greatest tracks</p>
+                    <a href="{% url 'tracks:list' %}" class="btn pulse">Explore Music</a>
+                </div>
+           </div>
+
+    </section>
+{% endblock %}
